@@ -1,116 +1,302 @@
 <!DOCTYPE html>
 <html lang="en">
-
-    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy | NOVATECH SOFT</title>
-    <!-- Google Fonts for Professional Appeal -->
+    <title>Privacy Policy | Nova Live by NOVATECH SOFT</title>
+    
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
     <style>
-        /* Custom Document Layout for Legal Standard */
-        .policy-content {
-            text-align: left;
-            margin-top: 60px;
-            margin-bottom: 60px;
-            background: #ffffff;
+        :root {
+            --primary: #7c3aed;
+            --primary-dark: #5b21b6;
+            --secondary: #06b6d4;
+            --bg-color: #f8fafc;
+            --surface: #ffffff;
+            --text-main: #0f172a;
+            --text-muted: #475569;
+            --border-color: #e2e8f0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Premium Header Gradient */
+        .header-banner {
+            background: linear-gradient(135deg, #0f172a 0%, #312e81 100%);
+            padding: 80px 20px 100px;
+            text-align: center;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header-banner::after {
+            content: '';
+            position: absolute;
+            bottom: -50px;
+            left: 0;
+            right: 0;
+            height: 100px;
+            background: var(--bg-color);
+            transform: skewY(-2deg);
+        }
+
+        .header-title {
+            font-size: 3rem;
+            font-weight: 800;
+            letter-spacing: -1px;
+            margin-bottom: 15px;
+            background: linear-gradient(to right, #c4b5fd, #22d3ee);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .header-subtitle {
+            font-size: 1.1rem;
+            color: #cbd5e1;
+            font-weight: 400;
+        }
+
+        /* Main Content Container */
+        .container {
+            max-width: 900px;
+            margin: -60px auto 60px;
+            padding: 0 20px;
+            position: relative;
+            z-index: 10;
+        }
+
+        .policy-card {
+            background: var(--surface);
             padding: 50px;
-            border-radius: 16px;
-            border: 1px solid #e2e8f0;
-            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.02);
+            border-radius: 24px;
+            box-shadow: 0 20px 40px -15px rgba(0,0,0,0.05);
+            border: 1px solid rgba(255,255,255,0.5);
         }
-        .policy-content h1 {
-            font-size: 2.5rem;
-            color: #0f172a;
-            margin-bottom: 10px;
-            font-weight: 700;
-            letter-spacing: -0.5px;
-        }
-        .policy-content .date {
-            color: #64748b;
-            font-size: 0.95rem;
-            margin-bottom: 30px;
-            border-bottom: 1px solid #e2e8f0;
-            padding-bottom: 15px;
-        }
-        .policy-content h2 {
-            font-size: 1.5rem;
-            color: #0f172a;
-            margin-top: 35px;
-            margin-bottom: 15px;
+
+        .last-updated {
+            display: inline-block;
+            background: #f1f5f9;
+            color: var(--primary-dark);
+            padding: 8px 16px;
+            border-radius: 50px;
+            font-size: 0.875rem;
             font-weight: 600;
-            border-left: 4px solid #2563eb;
-            padding-left: 12px;
+            margin-bottom: 30px;
         }
-        .policy-content p, .policy-content ul {
-            color: #334155;
-            font-size: 1.05rem;
-            line-height: 1.75;
-            margin-bottom: 15px;
+
+        .intro-text {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            margin-bottom: 40px;
         }
-        .policy-content ul {
-            padding-left: 25px;
+
+        /* Section Styling */
+        section {
+            margin-bottom: 40px;
         }
-        .policy-content li {
-            margin-bottom: 10px;
+
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--text-main);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
         }
+
+        h2::before {
+            content: '';
+            display: block;
+            width: 8px;
+            height: 24px;
+            background: linear-gradient(to bottom, var(--primary), var(--secondary));
+            border-radius: 4px;
+        }
+
+        p {
+            color: var(--text-muted);
+            margin-bottom: 16px;
+        }
+
+        /* Beautiful Lists */
+        ul {
+            list-style: none;
+            padding-left: 0;
+            margin-bottom: 20px;
+        }
+
+        ul li {
+            position: relative;
+            padding-left: 28px;
+            margin-bottom: 12px;
+            color: var(--text-muted);
+        }
+
+        ul li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            top: 2px;
+            color: var(--secondary);
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+
+        strong {
+            color: var(--text-main);
+            font-weight: 600;
+        }
+
+        /* Contact Box */
+        .contact-box {
+            background: linear-gradient(to right, #f8fafc, #f1f5f9);
+            border-left: 4px solid var(--primary);
+            padding: 25px;
+            border-radius: 0 16px 16px 0;
+            margin-top: 40px;
+        }
+
+        .contact-box p {
+            margin-bottom: 5px;
+        }
+
+        .contact-email {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        /* Premium Button */
+        .btn-container {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .btn-primary {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: white;
+            padding: 14px 32px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 20px -10px var(--primary);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 15px 25px -10px var(--primary);
+        }
+
+        /* Responsive Design */
         @media (max-width: 768px) {
-            .policy-content {
-                padding: 25px;
-                margin-top: 30px;
-            }
-            .policy-content h1 {
-                font-size: 2rem;
-            }
+            .header-title { font-size: 2.2rem; }
+            .policy-card { padding: 30px 20px; border-radius: 16px; }
+            .container { margin-top: -40px; }
         }
     </style>
 </head>
 <body>
 
+    <!-- Premium Header -->
+    <header class="header-banner">
+        <h1 class="header-title">Privacy Policy</h1>
+        <p class="header-subtitle">Nova Live by NOVATECH SOFT</p>
+    </header>
+
+    <!-- Main Content -->
     <div class="container">
-        <div class="policy-content">
-            <h1>Privacy Policy</h1>
-            <p class="date"><strong>Last Updated:</strong> July 2026</p>
+        <div class="policy-card">
+            
+            <div class="last-updated">Last Updated: July 2026</div>
 
-            <p>Welcome to <strong>NOVATECH SOFT</strong>. Your privacy is of paramount importance to us. This Privacy Policy documentation clearly outlines the methodologies, strict practices, and system protocols regarding the collection, management, and security of information processed by the mobile applications and software services published by NOVATECH SOFT on the Google Play Store.</p>
-            <p>By installing, activating, or interacting with our mobile applications, you officially consent to the data structures and terms highlighted within this document. If you disagree with any segment of this legal policy, please discontinue the use of our applications immediately.</p>
+            <p class="intro-text">
+                Welcome to <strong>Nova Live</strong>, developed and published by <strong>NOVATECH SOFT</strong>. Your privacy is of paramount importance to us. This document clearly outlines how we collect, manage, moderate, and secure your information when you interact with our live streaming and socialization application on the Google Play Store.
+            </p>
 
-            <h2>1. Information Collection and Usage Framework</h2>
-            <p>Our application architecture is deeply anchored on user privacy. We build our software frameworks to minimize data collection. Depending on the functionalities of a specific app, the following data scopes may apply:</p>
-            <ul>
-                <li><strong>Personal Identifiable Information (PII):</strong> NOVATECH SOFT does not automatically track, index, or store personal user data such as your physical name, residential address, phone metrics, or identity documents. Any personal interactions (like support inquiries via email) are strictly kept confidential and never automated into persistent server networks.</li>
-                <li><strong>Non-Personal & Device Metadata:</strong> To enforce optimal performance routines, our applications may analyze generic hardware statistics, including operating system distributions, local language configurations, screen scale resolutions, and standard device log errors. This metadata is absolutely anonymous and is processed locally or in aggregate formats solely to eliminate application crashes.</li>
-            </ul>
+            <section>
+                <h2>1. Permissions & Device Data Access</h2>
+                <p>To provide core functionalities like live audio/video matching and profile customization, Nova Live requires specific, explicit permissions from your device. We strictly adhere to the principle of data minimization:</p>
+                <ul>
+                    <li><strong>Camera Access:</strong> Required strictly for live video broadcasting and capturing profile avatars. We <em>do not</em> secretly record, intercept, or store your live video streams on our servers.</li>
+                    <li><strong>Microphone Access:</strong> Required for live audio rooms and voice matching. Your real-time audio is transmitted securely and is never recorded or saved by us.</li>
+                    <li><strong>Photo & Gallery Access:</strong> Required solely to allow you to upload custom profile pictures or room logos. We only access the specific media files you manually select.</li>
+                </ul>
+            </section>
 
-            <h2>2. Third-Party Integrations and SDK Policies</h2>
-            <p>To deliver advanced features, continuous runtime stability, and monetization setups, our applications interface with globally trusted third-party service provider SDKs. These independent entities govern data operations under their own respective, highly regulated privacy architectures:</p>
-            <ul>
-                <li><strong>Google Play Services:</strong> Powers essential core systems, background application integrations, and basic infrastructure deliveries.</li>
-                <li><strong>Google Analytics for Firebase:</strong> Enables NOVATECH SOFT to structurally monitor completely anonymous diagnostic data, user retention patterns, and real-time system stability metrics.</li>
-                <li><strong>Google AdMob:</strong> Manages modern, policy-compliant contextual or non-contextual banner, interstitial, and rewarded advertisement delivery streams.</li>
-            </ul>
+            <section>
+                <h2>2. Third-Party Integrations & SDKs</h2>
+                <p>To ensure a seamless, high-quality, and secure runtime experience, Nova Live interfaces with globally trusted third-party SDKs. These independent entities govern data under their highly regulated architectures:</p>
+                <ul>
+                    <li><strong>Google Firebase:</strong> Used for secure authentication (Google Sign-In, Anonymous Login), database storage (Cloud Firestore), and crash analytics. Firebase securely stores your public profile data (Nickname, Age, Gender, Avatar URL, and virtual Coin Balance).</li>
+                    <li><strong>ZegoCloud (Live SDK):</strong> Used to facilitate our real-time audio and video streaming protocols. ZegoCloud strictly acts as a transmission bridge and does not record your personal communication data.</li>
+                    <li><strong>Google AdMob:</strong> Manages policy-compliant rewarded video advertisements. AdMob may collect anonymous device identifiers to serve contextual ads safely.</li>
+                </ul>
+            </section>
 
-            <h2>3. Absolute Data Security and Cryptography</h2>
-            <p>At NOVATECH SOFT, we deploy industry-recognized digital security baselines and localized encryption protocols to defend active application data environments. While no method of transmission over the open internet or electronic storage infrastructure is 100% impenetrable, we actively maintain modern developer sandboxing routines to fully secure user profiles against external threat actors or illegal data modifications.</p>
+            <section>
+                <h2>3. User-Generated Content (UGC) & Safety Moderation</h2>
+                <p>Nova Live is a platform for making friends and socializing. To maintain a safe, welcoming, and Google Play-compliant environment, we strictly enforce our UGC and Community Guidelines:</p>
+                <ul>
+                    <li><strong>Strict Moderation:</strong> Hate speech, bullying, explicit content, and harassment are strictly prohibited. We employ ongoing moderation to monitor public room activities.</li>
+                    <li><strong>Report & Block Systems:</strong> You have full authority to "Block" users you do not wish to interact with. You can also use our in-app "Report User" and "Report Room" features.</li>
+                    <li><strong>Action & Enforcement:</strong> Our moderation team reviews reports within 24 hours. Violators of our UGC policy will face immediate and permanent device-level bans.</li>
+                </ul>
+            </section>
 
-            <h2>4. International Children's Privacy Compliance</h2>
-            <p>Our application ecosystem actively aligns with the standard rules of the Children's Online Privacy Protection Act (COPPA) as well as global GDPR child safety directives. We do not design our interfaces to consciously manipulate, harvest, or retain digital identity footprints from children below the age of 13. If you believe your child has inadvertently transmitted personal identifiers to our infrastructure, please report to us via our registered channel, and we will initiate emergency data deletion algorithms instantly.</p>
+            <section>
+                <h2>4. Data Retention & Account Deletion</h2>
+                <p>You maintain absolute ownership and control over your personal data. We only retain your data as long as your account remains active on our platform.</p>
+                <ul>
+                    <li><strong>Data Retention:</strong> Your profile data and virtual wallet balances are kept securely on Firebase cloud servers to maintain your account continuity.</li>
+                    <li><strong>Instant Account Deletion:</strong> You can permanently delete your account and all associated data directly from the app by navigating to <strong>Profile > Delete Account (In-App)</strong>.</li>
+                    <li><strong>Permanent Erasure:</strong> Upon requesting deletion, your profile identity, coin balance, and history are immediately and irreversibly purged from our active database.</li>
+                </ul>
+            </section>
 
-            <h2>5. Dynamic Revisions to This Document</h2>
-            <p>NOVATECH SOFT holds the legitimate right to scale, revise, or reconstruct this legal Privacy Policy dynamically over time to comfortably stay compliant with evolving Google Play Developer Policy updates. Any structural modifications go live the moment the refreshed code is officially committed to this live website domain. We advise users to proactively crosscheck this platform systematically.</p>
+            <section>
+                <h2>5. Age Restrictions & Children's Privacy</h2>
+                <p>Nova Live is strictly built and restricted for users who are <strong>18 years of age or older</strong>. We actively align with the Children's Online Privacy Protection Act (COPPA). We do not consciously harvest or retain digital identity footprints from anyone under 18. If a minor inadvertently bypasses our age gate, please contact us immediately for emergency data deletion.</p>
+            </section>
 
-            <h2>6. Official Compliance Contact Registry</h2>
-            <p>For administrative data deletion requests, user inquiries, strategic partnership validations, or clarifying questions concerning your operational privacy environment, feel free to directly approach our legal operations desk:</p>
-            <p><strong>Official Corporate Email:</strong> technovasoft668@gmail.com</p>
+            <section>
+                <h2>6. Dynamic Policy Revisions</h2>
+                <p>NOVATECH SOFT holds the legitimate right to scale or revise this legal Privacy Policy dynamically to stay compliant with evolving Google Play Developer Policies. Any structural modifications go live the moment the refreshed code is officially committed to this live website domain.</p>
+            </section>
 
-            <!-- Centered Button Linking back smoothly to index.html -->
-            <div style="margin-top: 50px; text-align: center;">
-                <a href="index.html" class="btn btn-primary" style="margin-left: 0;">Back to Home Portfolio</a>
+            <div class="contact-box">
+                <p><strong>Official Compliance Contact</strong></p>
+                <p>For administrative data deletion requests, user inquiries, or validating your operational privacy environment, please contact our legal operations desk:</p>
+                <a href="mailto:technovasoft668@gmail.com" class="contact-email">technovasoft668@gmail.com</a>
             </div>
+
+            <div class="btn-container">
+                <a href="index.html" class="btn-primary">Back to Home Portfolio</a>
+            </div>
+
         </div>
     </div>
 
